@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockwork Canine | Dog Training</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Clockwork Canine</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#training">Training</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Better Training. Better Dogs.</h2>
+            <p>
+                Practical, thoughtful dog training built around communication,
+                consistency, and a strong relationship between dogs and their people.
+            </p>
+
+            <a href="#contact">Get Started</a>
+        </section>
+
+        <section id="training">
+            <h2>Our Training</h2>
+
+            <article>
+                <h3>Basic Obedience</h3>
+                <p>
+                    Build reliable everyday skills including sit, stay, recall,
+                    leash manners, and more.
+                </p>
+            </article>
+
+            <article>
+                <h3>Behavior Training</h3>
+                <p>
+                    Work through common behavioral challenges with structured,
+                    individualized training.
+                </p>
+            </article>
+
+            <article>
+                <h3>Puppy Training</h3>
+                <p>
+                    Give your puppy a strong foundation with socialization,
+                    house training, manners, and basic commands.
+                </p>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>About Clockwork Canine</h2>
+            <p>
+                At Clockwork Canine, we believe good training is about more than
+                commands. We help dogs and their owners understand each other,
+                creating habits that work in real life.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Ready to Get Started?</h2>
+            <p>Let's build a training plan that works for you and your dog.</p>
+
+            <address>
+                <p>Email: <a href="mailto:hello@clockworkcanine.com">hello@clockworkcanine.com</a></p>
+                <p>Phone: <a href="tel:+15555555555">(555) 555-5555</a></p>
+            </address>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Clockwork Canine. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
