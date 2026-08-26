@@ -1,2 +1,2 @@
-# Financing-App
-Model Finance App
+# dog training website
+web portion of the project, not the app
