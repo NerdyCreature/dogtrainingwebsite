@@ -13,19 +13,85 @@
 
     <!-- Navigation Header -->
     <header class="site-header">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
 
             <!-- Logo -->
             <a href="/" class="logo-link">
-                <img src="clockworklogo.png" alt="Clockwork Canine" class="logo">
+                <img src="clockworklogo.png" alt="" class="logo">
+                <span class="brand-name" aria-label="Clockwork Canine">
+                    <span>Clockwork</span>
+                    <span>Canine</span>
+                </span>
             </a>
 
-            <!-- Navigation Buttons -->
-            <div class="nav-links">
-                <a href="#about" class="nav-button">About Us</a>
+            <div class="nav-links" id="site-navigation">
+                <a href="#home" class="nav-button">Home</a>
 
-                <a href="#download" class="nav-button">Download the App</a>
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="who-we-are-menu">
+                        Who we are <span class="menu-caret" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="who-we-are-menu" hidden>
+                        <li><a href="#about" class="nav-button">Our Mission</a></li>
+                        <li><a href="#meet-our-team" class="nav-button">Meet Our Team</a></li>
+                    </ul>
+                </div>
 
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="education-menu">
+                        Education <span class="menu-caret" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="education-menu" hidden>
+                        <li><a href="#training-puppies" class="nav-button">Training Puppies</a></li>
+                        <li><a href="#commands-and-tricks" class="nav-button">Commands and Tricks</a></li>
+                        <li><a href="#behavioral-issues" class="nav-button">Resolving Behavioral Issues</a></li>
+                        <li class="submenu-item">
+                            <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="service-dog-menu">
+                                Service Dog Training <span class="menu-caret" aria-hidden="true"></span>
+                            </button>
+                            <ul class="dropdown-menu nested-menu" id="service-dog-menu" hidden>
+                                <li><a href="#blind-assistance" class="nav-button">Blind Assistance</a></li>
+                                <li><a href="#deaf-assistance" class="nav-button">Deaf Assistance</a></li>
+                                <li><a href="#medical-alert" class="nav-button">Medical Alert</a></li>
+                                <li><a href="#psychiatric" class="nav-button">Psychiatric</a></li>
+                                <li><a href="#autism-special-needs" class="nav-button">Autism and Special Needs</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu-item">
+                            <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="specialty-training-menu">
+                                Specialty Training <span class="menu-caret" aria-hidden="true"></span>
+                            </button>
+                            <ul class="dropdown-menu nested-menu" id="specialty-training-menu" hidden>
+                                <li><a href="#hunting-training" class="nav-button">Hunting Training</a></li>
+                                <li><a href="#dock-diving" class="nav-button">Dock Diving</a></li>
+                                <li><a href="#agility-training" class="nav-button">Agility Training</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu-item">
+                            <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="akc-prep-menu">
+                                AKC Certification Prep <span class="menu-caret" aria-hidden="true"></span>
+                            </button>
+                            <ul class="dropdown-menu nested-menu" id="akc-prep-menu" hidden>
+                                <li><a href="#canine-good-citizen" class="nav-button">Canine Good Citizen Certification Prep</a></li>
+                                <li><a href="#therapy-dog-certification" class="nav-button">Therapy Dog Certification Prep</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="pups-for-people-menu">
+                        Pups for People <span class="menu-caret" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="pups-for-people-menu" hidden>
+                        <li><a href="#pups-home" class="nav-button">Home</a></li>
+                        <li><a href="#pups-mission" class="nav-button">The Mission</a></li>
+                        <li><a href="#volunteer" class="nav-button">Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <a href="#download" class="nav-button">Download The App</a>
+                <a href="#blog" class="nav-button">The Blog</a>
                 <a href="#signin" class="nav-button sign-in-button">Sign In</a>
             </div>
 
@@ -37,7 +103,7 @@
     <main>
 
         <!-- Hero / Image Carousel -->
-        <section class="hero">
+        <section class="hero" id="home">
 
             <!-- Carousel Images -->
             <div class="carousel">
@@ -68,6 +134,69 @@
         </section>
 
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <a href="#home" class="footer-logo-link" aria-label="Clockwork Canine home">
+                <img src="clockworklogo.png" alt="" class="footer-logo">
+                <span class="footer-brand-name">
+                    <span>Clockwork</span>
+                    <span>Canine</span>
+                </span>
+            </a>
+            <p class="footer-description">
+                Clockwork Canine helps dogs and their people build clear communication, confidence, and lasting skills. Our goal is to make thoughtful training accessible for every stage of a dog's journey.
+            </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Quick Links">
+            <h2>Quick Links</h2>
+            <a href="#contact-us">Contact Us</a>
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms-and-conditions">Terms and Conditions</a>
+        </nav>
+    </footer>
+
+    <script>
+        const navigation = document.querySelector(".nav-links");
+        const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+        function closeDropdowns(exceptMenu = null) {
+            document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+                if (menu !== exceptMenu && !menu.contains(exceptMenu)) {
+                    menu.hidden = true;
+                    const toggle = document.querySelector(`[aria-controls="${menu.id}"]`);
+                    toggle?.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
+
+        dropdownToggles.forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+                const menu = document.getElementById(toggle.getAttribute("aria-controls"));
+                const opening = menu.hidden;
+                closeDropdowns(menu);
+                menu.hidden = !opening;
+                toggle.setAttribute("aria-expanded", String(opening));
+            });
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest(".navbar")) closeDropdowns();
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeDropdowns();
+            }
+        });
+
+        navigation.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                closeDropdowns();
+            });
+        });
+    </script>
 
 </body>
 </html>

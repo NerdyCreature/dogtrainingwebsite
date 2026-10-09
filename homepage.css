@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-blue: #84796f;
+    --color-blue-deep: #514943;
+    --color-green: #81766d;
+    --color-green-hover: #6b6058;
+    --color-beige: #eee7dc;
+    --color-white: #fffdfa;
+    --color-ink: #4b4642;
+}
+
 html,
 body {
     margin: 0;
@@ -14,8 +24,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar,
+.navbar * {
+    font-family: Consolas, "Courier New", monospace;
+}
+
 body {
-    background-color: #ffffff;
+    background-color: var(--color-beige);
+    color: var(--color-ink);
 }
 
 
@@ -35,8 +51,8 @@ body {
     width: 100%;
     height: 80px;
 
-    /* Navy blue with 50% transparency */
-    background-color: rgba(0, 25, 60, 0.5);
+    background-color: rgba(78, 70, 64, 0.94);
+    border-bottom: 1px solid rgba(233, 223, 201, 0.35);
 
     display: flex;
     align-items: center;
@@ -53,13 +69,26 @@ body {
 .logo-link {
     display: flex;
     align-items: center;
+    gap: 12px;
     height: 100%;
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 .logo {
     display: block;
     max-height: 60px;
     width: auto;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    color: #d8c2a5;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: 0.015em;
 }
 
 
@@ -70,46 +99,123 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 4px;
 }
 
 .nav-button {
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--color-white);
     text-decoration: none;
-
-    padding: 10px 5px;
-
-    font-size: 16px;
+    white-space: nowrap;
+    padding: 10px 8px;
+    font-size: 14px;
     font-weight: 500;
-
     background: transparent;
     border: none;
-
-    transition: opacity 0.2s ease;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .nav-button:hover {
-    opacity: 0.75;
+    color: var(--color-beige);
+}
+
+.nav-button:focus-visible,
+.create-account-button:focus-visible,
+.returning-user-link:focus-visible {
+    outline: 3px solid var(--color-beige);
+    outline-offset: 4px;
 }
 
 
-/* Sign In Button */
+/* Sign In button */
 
 .sign-in-button {
-    color: black;
-
-    background-color: white;
-
-    border: 2px solid black;
-    border-radius: 4px;
-
-    padding: 10px 20px;
+    color: var(--color-blue-deep);
+    background-color: var(--color-beige);
+    border: 2px solid var(--color-beige);
+    border-radius: 6px;
+    margin-left: 4px;
+    padding: 9px 16px;
 }
 
 .sign-in-button:hover {
-    opacity: 0.85;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border-color: var(--color-green);
 }
 
+.nav-item {
+    position: relative;
+}
+
+.menu-caret {
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 120;
+    width: max-content;
+    min-width: 230px;
+    max-width: min(340px, 90vw);
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    color: var(--color-ink);
+    background: var(--color-white);
+    border: 1px solid rgba(81, 73, 67, 0.16);
+    border-radius: 8px;
+    box-shadow: 0 12px 28px rgba(35, 30, 27, 0.22);
+}
+
+.dropdown-menu[hidden] {
+    display: none;
+}
+
+.dropdown-menu .nav-button {
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+    white-space: normal;
+    color: var(--color-ink);
+    border-radius: 5px;
+    padding: 9px 10px;
+}
+
+.dropdown-menu .nav-button:hover,
+.dropdown-menu .nav-button:focus-visible {
+    color: var(--color-ink);
+    background: var(--color-beige);
+}
+
+.submenu-menu,
+.nested-menu {
+    position: static;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    max-height: none;
+    margin: 0 0 4px 10px;
+    padding: 2px 0 2px 8px;
+    overflow: visible;
+    border: 0;
+    border-left: 1px solid #d8cfc2;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
 
 /* ========================================
    HERO SECTION
@@ -197,7 +303,7 @@ body {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, rgba(70, 66, 63, 0.63), rgba(132, 121, 111, 0.32) 58%, rgba(70, 66, 63, 0.46));
 
     z-index: 1;
 }
@@ -222,7 +328,7 @@ body {
 
     text-align: center;
 
-    color: white;
+    color: var(--color-white);
 }
 
 
@@ -247,21 +353,23 @@ body {
 
     padding: 15px 30px;
 
-    background-color: #1d5f8c;
-    color: white;
+    background-color: var(--color-green);
+    color: var(--color-white);
 
     text-decoration: none;
 
-    border-radius: 5px;
+    border: 2px solid var(--color-beige);
+    border-radius: 6px;
 
     font-size: 18px;
     font-weight: 600;
 
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .create-account-button:hover {
-    background-color: #16496c;
+    background-color: var(--color-green-hover);
+    transform: translateY(-2px);
 }
 
 
@@ -274,7 +382,7 @@ body {
 
     margin-top: 15px;
 
-    color: white;
+    color: var(--color-beige);
 
     background: transparent;
 
@@ -291,31 +399,134 @@ body {
 
 
 /* ========================================
+   FOOTER
+   ======================================== */
+
+.site-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 38px 35px;
+    color: var(--color-white);
+    background: var(--color-blue-deep);
+}
+
+.footer-brand {
+    max-width: 560px;
+}
+
+.footer-logo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #d8c2a5;
+    text-decoration: none;
+}
+
+.footer-logo {
+    display: block;
+    max-height: 64px;
+    width: auto;
+}
+
+.footer-brand-name {
+    display: flex;
+    flex-direction: column;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: 0.015em;
+}
+
+.footer-description {
+    max-width: 520px;
+    margin: 14px 0 0;
+    color: var(--color-beige);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: grid;
+    gap: 10px;
+    min-width: 220px;
+}
+
+.footer-links h2 {
+    margin: 0 0 4px;
+    color: #d8c2a5;
+    font-size: 18px;
+}
+
+.footer-links a {
+    width: fit-content;
+    color: var(--color-white);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--color-beige);
+    text-decoration: underline;
+}
+
+
+/* ========================================
    MOBILE SIZING
    ======================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 1180px) {
 
     .navbar {
-        height: 70px;
-        padding: 0 15px;
+        height: auto;
+        min-height: 70px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 6px 14px 10px;
     }
 
     .logo {
-        max-height: 50px;
+        max-height: 44px;
+    }
+
+    .logo-link {
+        gap: 8px;
+        justify-content: flex-start;
+        width: auto;
+        flex: 0 0 auto;
+        height: 52px;
+    }
+
+    .brand-name {
+        font-size: 15px;
     }
 
     .nav-links {
-        gap: 10px;
+        width: auto;
+        min-width: 0;
+        flex: 1 1 460px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        overflow: visible;
     }
 
-    .nav-button {
-        font-size: 13px;
+    .nav-item {
+        width: auto;
+    }
+
+    .dropdown-menu .nav-button {
+        font-size: 14px;
     }
 
     .sign-in-button {
-        padding: 8px 12px;
+        justify-content: center;
+        margin: 0 0 0 4px;
     }
+}
+
+@media (max-width: 700px) {
 
     .hero {
         height: 600px;
@@ -328,5 +539,30 @@ body {
     .create-account-button {
         font-size: 16px;
         padding: 13px 24px;
+    }
+
+    .nav-button {
+        padding: 9px 7px;
+        font-size: 13px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        gap: 28px;
+        padding: 32px 20px;
+    }
+
+    .footer-links {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        padding: 0 12px;
+    }
+
+    .brand-name {
+        font-size: 14px;
     }
 }
