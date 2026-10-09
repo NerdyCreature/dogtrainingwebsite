@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Clockwork Canine Dog Training</title>
-
+    <title>About Us | Clockwork Canine</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="pages.css">
 </head>
-
-<body>
-
-    <!-- Navigation Header -->
+<body class="content-page">
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
 
             <!-- Logo -->
-            <a href="/" class="logo-link">
+            <a href="index.html#home" class="logo-link">
                 <img src="clockworklogo.png" alt="" class="logo">
                 <span class="brand-name" aria-label="Clockwork Canine">
                     <span>Clockwork</span>
@@ -25,14 +21,14 @@
             </a>
 
             <div class="nav-links" id="site-navigation">
-                <a href="#home" class="nav-button">Home</a>
+                <a href="index.html#home" class="nav-button">Home</a>
 
                 <div class="nav-item">
                     <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="who-we-are-menu">
                         Who we are <span class="menu-caret" aria-hidden="true"></span>
                     </button>
                     <ul class="dropdown-menu" id="who-we-are-menu" hidden>
-                        <li><a href="about-us.html" class="nav-button">Our Mission</a></li>
+                        <li><a href="about-us.html" class="nav-button" aria-current="page">Our Mission</a></li>
                         <li><a href="meet-our-team.html" class="nav-button">Meet Our Team</a></li>
                     </ul>
                 </div>
@@ -97,47 +93,61 @@
 
         </nav>
     </header>
+    <main class="page-main">
 
-
-    <!-- Main Page Content -->
-    <main>
-
-        <!-- Hero / Image Carousel -->
-        <section class="hero" id="home">
-
-            <!-- Carousel Images -->
-            <div class="carousel">
-
-                <!-- Replace these with your actual images later -->
-                <div class="carousel-slide slide-1"></div>
-                <div class="carousel-slide slide-2"></div>
-                <div class="carousel-slide slide-3"></div>
-
+        <section class="page-hero">
+            <div class="page-container">
+                <p class="page-eyebrow">Our Mission</p>
+                <h1>About Clockwork Canine</h1>
+                <p class="page-lead">We help dogs and their people build clear communication, confidence, and lasting skills through thoughtful training.</p>
             </div>
-
-
-            <!-- Text Layer Over Carousel -->
-            <div class="hero-overlay">
-
-                <h1>Clockwork Canine Dog Training</h1>
-
-                <a href="#create-account" class="create-account-button">
-                    Create an Account
-                </a>
-
-                <a href="#login" class="returning-user-link">
-                    Returning User Log In
-                </a>
-
-            </div>
-
         </section>
 
-    </main>
+        <section class="page-section">
+            <div class="page-container">
+                <h2>What We Believe</h2>
+                <p class="page-section-intro">Every dog and household has its own needs and goals. Our aim is to make training understandable, encouraging, and useful in everyday life.</p>
+                <div class="page-card-grid">
+                    <article class="page-card">
+                        <h3>Clear Communication</h3>
+                        <p>Build shared understanding between dogs and the people who care for them.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Confidence Through Practice</h3>
+                        <p>Grow skills through steady practice that meets each dog where they are.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Skills for Everyday Life</h3>
+                        <p>Focus on practical progress that supports dogs at home and out in the world.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="page-section">
+            <div class="page-container">
+                <h2>Training for Every Stage</h2>
+                <p class="page-section-intro">From early foundations to specialized goals, Clockwork Canine is building resources for dogs and their people across a range of training needs.</p>
+                <div class="page-card-grid">
+                    <article class="page-card">
+                        <h3>Foundations</h3>
+                        <p>Puppy training, commands, tricks, and support with behavioral challenges.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Specialized Training</h3>
+                        <p>Service dog, specialty, and certification preparation topics.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Keep Learning</h3>
+                        <p>Explore the Education menu for training topics as new resources are added.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="site-footer">
         <div class="footer-brand">
-            <a href="#home" class="footer-logo-link" aria-label="Clockwork Canine home">
+            <a href="index.html#home" class="footer-logo-link" aria-label="Clockwork Canine home">
                 <img src="clockworklogo.png" alt="" class="footer-logo">
                 <span class="footer-brand-name">
                     <span>Clockwork</span>
@@ -156,7 +166,6 @@
             <a href="#terms-and-conditions">Terms and Conditions</a>
         </nav>
     </footer>
-
     <script>
         const navigation = document.querySelector(".nav-links");
         const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
@@ -197,6 +206,5 @@
             });
         });
     </script>
-
 </body>
 </html>
