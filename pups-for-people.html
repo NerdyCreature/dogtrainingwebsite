@@ -4,98 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pups for People | Clockwork Canine</title>
+    <title>Pups for People</title>
 
     <link rel="stylesheet" href="homepage.css">
 </head>
 
-<body class="pups-home-page">
+<body class="pups-site-page pups-home-page">
 
     <!-- Navigation Header -->
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
 
             <!-- Logo -->
-            <a href="/" class="logo-link">
-                <span class="brand-name" aria-label="Clockwork Canine">
-                    <span>Clockwork</span>
-                    <span>Canine</span>
-                </span>
+            <a href="pups-for-people.html" class="logo-link pups-brand-link" aria-label="Pups for People home">
+                <svg class="pups-brand-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <path d="M14 10 7 7l1 13a15 15 0 0 0-2 8c0 9 7 15 18 15s18-6 18-15a15 15 0 0 0-2-8l1-13-7 3a22 22 0 0 0-20 0Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 24h.1M31 24h.1M20 31c2.5 2 5.5 2 8 0" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+                    <path d="M24 40s-6-3.5-6-7.4c0-2.7 3.2-3.9 6-1.2 2.8-2.7 6-1.5 6 1.2 0 3.9-6 7.4-6 7.4Z" fill="currentColor"/>
+                </svg>
+                <span class="brand-name">Pups for People</span>
             </a>
 
             <div class="nav-links" id="site-navigation">
-                <a href="#home" class="nav-button">Home</a>
-
-                <div class="nav-item">
-                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="who-we-are-menu">
-                        Who we are <span class="menu-caret" aria-hidden="true"></span>
-                    </button>
-                    <ul class="dropdown-menu" id="who-we-are-menu" hidden>
-                        <li><a href="about-us.html" class="nav-button">Our Mission</a></li>
-                        <li><a href="meet-our-team.html" class="nav-button">Meet Our Team</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-item">
-                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="education-menu">
-                        Education <span class="menu-caret" aria-hidden="true"></span>
-                    </button>
-                    <ul class="dropdown-menu" id="education-menu" hidden>
-                        <li><a href="training-puppies.html" class="nav-button">Training Puppies</a></li>
-                        <li><a href="commands-and-tricks.html" class="nav-button">Commands and Tricks</a></li>
-                        <li><a href="resolving-behavioral-issues.html" class="nav-button">Resolving Behavioral Issues</a></li>
-                        <li class="submenu-item">
-                            <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="service-dog-menu">
-                                Service Dog Training <span class="menu-caret" aria-hidden="true"></span>
-                            </button>
-                            <ul class="dropdown-menu nested-menu" id="service-dog-menu" hidden>
-                                <li><a href="service-dog-training.html" class="nav-button">Service Dog Training Overview</a></li>
-                                <li><a href="blind-assistance.html" class="nav-button">Blind Assistance</a></li>
-                                <li><a href="deaf-assistance.html" class="nav-button">Deaf Assistance</a></li>
-                                <li><a href="medical-alert.html" class="nav-button">Medical Alert</a></li>
-                                <li><a href="psychiatric-assistance.html" class="nav-button">Psychiatric</a></li>
-                                <li><a href="autism-and-special-needs.html" class="nav-button">Autism and Special Needs</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu-item">
-                            <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="specialty-training-menu">
-                                Specialty Training <span class="menu-caret" aria-hidden="true"></span>
-                            </button>
-                            <ul class="dropdown-menu nested-menu" id="specialty-training-menu" hidden>
-                                <li><a href="specialty-training.html" class="nav-button">Specialty Training Overview</a></li>
-                                <li><a href="hunting-training.html" class="nav-button">Hunting Training</a></li>
-                                <li><a href="dock-diving.html" class="nav-button">Dock Diving</a></li>
-                                <li><a href="agility-training.html" class="nav-button">Agility Training</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu-item">
-                            <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="akc-prep-menu">
-                                AKC Certification Prep <span class="menu-caret" aria-hidden="true"></span>
-                            </button>
-                            <ul class="dropdown-menu nested-menu" id="akc-prep-menu" hidden>
-                                <li><a href="akc-certification-prep.html" class="nav-button">AKC Prep Overview</a></li>
-                                <li><a href="canine-good-citizen-certification-prep.html" class="nav-button">Canine Good Citizen Certification Prep</a></li>
-                                <li><a href="therapy-dog-certification-prep.html" class="nav-button">Therapy Dog Certification Prep</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="nav-item">
-                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="pups-for-people-menu">
-                        Pups for People <span class="menu-caret" aria-hidden="true"></span>
-                    </button>
-                    <ul class="dropdown-menu" id="pups-for-people-menu" hidden>
-                        <li><a href="pups-for-people.html" class="nav-button">Home</a></li>
-                        <li><a href="pups-mission.html" class="nav-button">The Mission</a></li>
-                        <li><a href="pups-volunteer.html" class="nav-button">Volunteer</a></li>
-                        <li><a href="pups-donate.html" class="nav-button">Donate</a></li>
-                    </ul>
-                </div>
-
-                <a href="#download" class="nav-button">Download The App</a>
-                <a href="#blog" class="nav-button">The Blog</a>
-                <a href="#signin" class="nav-button sign-in-button">Sign In</a>
+                <a href="index.html" class="nav-button">Clockwork Canine</a>
+                <a href="pups-for-people.html" class="nav-button">Home</a>
+                <a href="pups-mission.html" class="nav-button">The Mission</a>
+                <a href="pups-volunteer.html" class="nav-button">Volunteer</a>
+                <a href="pups-donate.html" class="nav-button sign-in-button">Donate</a>
             </div>
 
         </nav>
@@ -106,39 +41,81 @@
     <main>
 
         <section class="pups-home-hero" id="pups-home" aria-labelledby="pups-title">
+            <img class="pups-home-hero-image" src="https://www.theacademyofpetcareers.com/wp-content/uploads/2023/09/Service-Dog-Training.jpg" alt="A service dog working alongside its handler">
             <div class="pups-container pups-home-hero-content">
-                <div class="pups-goal-bubble">
-                    <p class="pups-eyebrow">Our Goal</p>
-                    <p>Help connect disabled people with service dog gear and free training courses across the USA, educate youth and businesses about ADA law, and normalize service animals in public spaces.</p>
+                <div class="pups-home-hero-copy">
+                    <p class="pups-eyebrow">Access. Education. Belonging.</p>
+                    <h1 id="pups-title">A more accessible world for every service dog team.</h1>
+                    <p class="pups-home-hero-lead">We help disabled people connect with service dog equipment and training, while building communities that understand and welcome service dog teams.</p>
+                    <div class="pups-home-actions">
+                        <a class="pups-cta-button" href="pups-mission.html">Explore our mission</a>
+                        <a class="pups-cta-link" href="pups-donate.html">Support our work <span aria-hidden="true">→</span></a>
+                    </div>
                 </div>
-                <h1 id="pups-title">A world where every service dog team belongs.</h1>
             </div>
         </section>
 
-        <section class="pups-home-impact" aria-label="Donation impact">
+        <section class="pups-home-welcome" aria-labelledby="welcome-title">
+            <div class="pups-container pups-home-welcome-inner">
+                <p class="pups-eyebrow">Pups for People</p>
+                <h2 id="welcome-title">Independence grows when access is within reach.</h2>
+                <p>Finding the right equipment, training, and reliable information can be difficult. We work to make those resources easier to find, and to help schools, businesses, and neighbors understand how to welcome service dog teams.</p>
+            </div>
+        </section>
+
+        <section class="pups-home-programs" id="our-work" aria-labelledby="our-work-title">
             <div class="pups-container">
-                <aside class="pups-donation-note">
-                    <svg class="pups-donation-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <path d="M24 40S5 29 5 16.5C5 9 14.5 5 24 14c9.5-9 19-5 19 2.5C43 29 24 40 24 40Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
-                        <path d="M13 24h7l4-7 5 14 4-7h5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <p><strong>100% of your donations</strong> go directly to service dog handlers and disabled individuals in need.</p>
-                </aside>
+                <div class="pups-home-section-heading">
+                    <p class="pups-eyebrow">How we help</p>
+                    <h2 id="our-work-title">Practical support. More welcoming communities.</h2>
+                </div>
+                <div class="pups-home-program-grid">
+                    <article class="pups-home-program-card">
+                        <span class="pups-program-number" aria-hidden="true">01</span>
+                        <h3>Service dog equipment</h3>
+                        <p>We connect disabled handlers with essential gear, including harnesses, leashes, and other equipment that supports everyday partnership.</p>
+                    </article>
+                    <article class="pups-home-program-card">
+                        <span class="pups-program-number" aria-hidden="true">02</span>
+                        <h3>Training opportunities</h3>
+                        <p>We help people find free training resources and connect eligible individuals with support for training that fits their needs.</p>
+                    </article>
+                    <article class="pups-home-program-card">
+                        <span class="pups-program-number" aria-hidden="true">03</span>
+                        <h3>Education and awareness</h3>
+                        <p>We help youth, businesses, and communities learn about service animals, respectful interactions, and ADA access.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="pups-home-community">
+            <div class="pups-container pups-home-community-inner">
+                <div>
+                    <p class="pups-eyebrow">Change starts together</p>
+                    <h2>Help make access and understanding part of everyday life.</h2>
+                    <p>Whether you give your time, make a donation, or share what you learn, you can help build a more supportive community for service dog handlers.</p>
+                </div>
+                <div class="pups-home-community-actions">
+                    <a class="pups-cta-button" href="pups-volunteer.html">Find ways to volunteer</a>
+                    <a class="pups-cta-link" href="pups-donate.html">Give to support our mission <span aria-hidden="true">→</span></a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="footer-brand">
-            <a href="index.html#home" class="footer-logo-link" aria-label="Clockwork Canine home">
-                <img src="clockworklogo.png" alt="" class="footer-logo">
-                <span class="footer-brand-name">
-                    <span>Clockwork</span>
-                    <span>Canine</span>
-                </span>
+            <a href="pups-for-people.html" class="footer-logo-link" aria-label="Pups for People home">
+                <svg class="pups-footer-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <path d="M14 10 7 7l1 13a15 15 0 0 0-2 8c0 9 7 15 18 15s18-6 18-15a15 15 0 0 0-2-8l1-13-7 3a22 22 0 0 0-20 0Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 24h.1M31 24h.1M20 31c2.5 2 5.5 2 8 0" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+                    <path d="M24 40s-6-3.5-6-7.4c0-2.7 3.2-3.9 6-1.2 2.8-2.7 6-1.5 6 1.2 0 3.9-6 7.4-6 7.4Z" fill="currentColor"/>
+                </svg>
+                <span class="footer-brand-name">Pups for People</span>
             </a>
             <p class="footer-description">
-                Clockwork Canine helps dogs and their people build clear communication, confidence, and lasting skills. Our goal is to make training accessible for every stage of a dog's journey.  
+                Our goal is to help connect disabled people with service dog gear and free training courses across the USA, educate youth and businesses about ADA law, and normalize service animals in public spaces.
             </p>
         </div>
 
@@ -150,46 +127,6 @@
         </nav>
     </footer>
 
-    <script>
-        const navigation = document.querySelector(".nav-links");
-        const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-        function closeDropdowns(exceptMenu = null) {
-            document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-                if (menu !== exceptMenu && !menu.contains(exceptMenu)) {
-                    menu.hidden = true;
-                    const toggle = document.querySelector(`[aria-controls="${menu.id}"]`);
-                    toggle?.setAttribute("aria-expanded", "false");
-                }
-            });
-        }
-
-        dropdownToggles.forEach((toggle) => {
-            toggle.addEventListener("click", () => {
-                const menu = document.getElementById(toggle.getAttribute("aria-controls"));
-                const opening = menu.hidden;
-                closeDropdowns(menu);
-                menu.hidden = !opening;
-                toggle.setAttribute("aria-expanded", String(opening));
-            });
-        });
-
-        document.addEventListener("click", (event) => {
-            if (!event.target.closest(".navbar")) closeDropdowns();
-        });
-
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") {
-                closeDropdowns();
-            }
-        });
-
-        navigation.querySelectorAll("a").forEach((link) => {
-            link.addEventListener("click", () => {
-                closeDropdowns();
-            });
-        });
-    </script>
 
 </body>
 </html>

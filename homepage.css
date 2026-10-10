@@ -419,105 +419,356 @@ body {
     margin: 0 auto;
 }
 
+body.pups-site-page {
+    --color-blue: #a8d5a1;
+    --color-blue-deep: #4a4b45;
+    --color-green: #a8d5a1;
+    --color-green-hover: #66645e;
+    --color-beige: #fbf4e5;
+    --color-white: #fffefa;
+    --color-ink: #3d403b;
+    --pups-soft-gray: #f5f4f0;
+    --pups-soft-gray-light: #f8f7f3;
+    --pups-warm-beige: #f6ebd5;
+    --pups-border: #dedbd2;
+
+    background-color: var(--color-beige);
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+}
+
+body.pups-site-page .navbar,
+body.pups-site-page .navbar * {
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+}
+
+body.pups-site-page .site-header {
+    position: relative;
+}
+
+body.pups-site-page.pups-home-page .site-header {
+    position: absolute;
+}
+
+body.pups-site-page .navbar {
+    min-height: 80px;
+    height: auto;
+    background-color: rgba(255, 248, 233, 0.98);
+    border-bottom: 1px solid #eadcc3;
+}
+
+body.pups-site-page .logo-link {
+    gap: 10px;
+    color: var(--color-ink);
+}
+
+body.pups-site-page .pups-brand-icon {
+    display: block;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto;
+    color: var(--color-blue-deep);
+}
+
+body.pups-site-page .brand-name {
+    display: block;
+    color: var(--color-blue-deep);
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+body.pups-site-page .nav-button {
+    color: var(--color-blue-deep);
+}
+
+body.pups-site-page .nav-button:hover {
+    color: var(--color-green-hover);
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+body.pups-site-page .nav-button:focus-visible,
+body.pups-site-page .nav-links a:focus-visible {
+    outline-color: var(--color-blue-deep);
+}
+
+body.pups-site-page .nav-button.sign-in-button {
+    color: var(--color-blue-deep);
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    border-radius: 999px;
+}
+
+body.pups-site-page .nav-button.sign-in-button:hover {
+    background-color: var(--pups-warm-beige);
+    border-color: #e7dcc7;
+}
+
+body.pups-site-page .pups-eyebrow {
+    color: var(--color-green-hover);
+}
+
+body.pups-site-page .pups-section p,
+body.pups-site-page .pups-program-card p,
+body.pups-site-page .pups-goal-card p {
+    color: #555650;
+}
+
 .pups-intro {
     padding: 76px 0 64px;
     color: var(--color-ink);
-    background: #f3eadc;
+    background: var(--color-beige);
     text-align: center;
-}
-
-.pups-home-page .site-header {
-    position: absolute;
 }
 
 .pups-home-hero {
     position: relative;
-    min-height: 680px;
-    padding-top: 80px;
+    display: flex;
+    min-height: 650px;
+    align-items: center;
+    padding: 104px 0 72px;
     overflow: hidden;
-    color: var(--color-white);
-    background-image: linear-gradient(90deg, rgba(53, 43, 36, 0.66), rgba(70, 57, 47, 0.27) 58%, rgba(53, 43, 36, 0.58)), url("https://images.unsplash.com/photo-1552053831-71594a27632d");
-    background-position: center;
-    background-size: cover;
+    color: var(--color-ink);
+    background-color: var(--color-beige);
+}
+
+.pups-home-hero::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(90deg, rgba(251, 244, 229, 0.94), rgba(251, 244, 229, 0.82) 48%, rgba(255, 254, 250, 0.16));
+    pointer-events: none;
+}
+
+.pups-home-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
 }
 
 .pups-home-hero-content {
+    position: relative;
+    z-index: 1;
     display: flex;
-    min-height: 600px;
-    flex-direction: column;
     align-items: center;
-    padding-top: 54px;
-    padding-bottom: 56px;
 }
 
-.pups-goal-bubble {
-    position: relative;
-    width: min(780px, 100%);
-    padding: 24px 30px;
-    color: var(--color-ink);
-    background: rgba(255, 253, 250, 0.96);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 24px;
-    box-shadow: 0 12px 32px rgba(35, 30, 27, 0.2);
-    text-align: center;
-}
-
-.pups-goal-bubble::after {
-    position: absolute;
-    bottom: -13px;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    content: "";
-    background: rgba(255, 253, 250, 0.96);
-    transform: translateX(-50%) rotate(45deg);
-}
-
-.pups-goal-bubble .pups-eyebrow {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 8px;
-}
-
-.pups-goal-bubble p:last-child {
-    position: relative;
-    z-index: 1;
-    margin: 0;
-    font-size: clamp(16px, 2vw, 19px);
-    line-height: 1.65;
+.pups-home-hero-copy {
+    max-width: 680px;
 }
 
 .pups-home-hero h1 {
-    max-width: 900px;
-    margin: auto 0 0;
-    color: var(--color-white);
-    font-family: Consolas, "Courier New", monospace;
-    font-size: clamp(36px, 5.5vw, 62px);
+    margin: 0;
+    color: var(--color-ink);
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: clamp(38px, 5.5vw, 64px);
     line-height: 1.12;
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
+}
+
+.pups-home-hero .pups-eyebrow {
+    margin-bottom: 16px;
+    color: var(--color-green-hover);
+}
+
+.pups-home-hero-lead {
+    max-width: 610px;
+    margin: 20px 0 0;
+    color: #555650;
+    font-size: clamp(17px, 2vw, 20px);
+    line-height: 1.7;
+}
+
+.pups-home-actions,
+.pups-home-community-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px 26px;
+    margin-top: 30px;
+}
+
+.pups-cta-button,
+.pups-cta-link {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.pups-cta-button {
+    padding: 12px 20px;
+    color: var(--color-blue-deep);
+    background: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 999px;
+    box-shadow: 0 5px 14px rgba(53, 51, 45, 0.1);
+}
+
+.pups-cta-button:hover {
+    background: var(--pups-warm-beige);
+    border-color: #e7dcc7;
+    box-shadow: 0 8px 18px rgba(53, 51, 45, 0.15);
+    transform: translateY(-1px);
+}
+
+.pups-cta-link {
+    gap: 8px;
+    color: var(--color-blue-deep);
+}
+
+.pups-cta-button:focus-visible,
+.pups-cta-link:focus-visible {
+    outline: 3px solid var(--color-blue-deep);
+    outline-offset: 4px;
+}
+
+.pups-cta-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.pups-home-welcome {
+    padding: 76px 0;
+    background: var(--pups-warm-beige);
     text-align: center;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
-.pups-home-impact {
-    padding: 38px 0;
-    background: #f3eadc;
+.pups-home-welcome-inner {
+    max-width: 850px;
 }
 
-.pups-home-impact .pups-donation-note {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 20px 26px;
-    color: #69523b;
+.pups-home-welcome h2,
+.pups-home-section-heading h2,
+.pups-home-community h2 {
+    margin: 0;
+    color: var(--color-ink);
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+}
+
+.pups-home-welcome-inner > p:last-child {
+    max-width: 780px;
+    margin: 20px auto 0;
+    color: #555650;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.pups-home-programs {
+    padding: 72px 0 82px;
+    background: var(--pups-soft-gray-light);
+}
+
+.pups-home-section-heading {
+    max-width: 720px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.pups-home-section-heading .pups-eyebrow {
+    margin-bottom: 12px;
+}
+
+.pups-home-program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.pups-home-program-card {
+    min-height: 255px;
+    padding: 26px;
     background: var(--color-white);
-    border: 1px solid #ded5c8;
-    border-radius: 16px;
-    box-shadow: 0 8px 22px rgba(61, 53, 46, 0.08);
+    border: 1px solid var(--pups-border);
+    border-radius: 12px;
+    box-shadow: 0 10px 26px rgba(53, 51, 45, 0.08);
+}
+
+.pups-program-number {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: var(--color-green-hover);
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.pups-home-program-card h3 {
+    margin: 0 0 12px;
+    color: var(--color-ink);
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.pups-home-program-card p {
+    margin: 0;
+    color: #555650;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.pups-home-community {
+    padding: 70px 0;
+    background: var(--pups-warm-beige);
+}
+
+.pups-home-community-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.pups-home-community-inner > div:first-child {
+    max-width: 650px;
+}
+
+.pups-home-community h2 {
+    font-size: clamp(27px, 3.6vw, 38px);
+}
+
+.pups-home-community-inner > div:first-child > p:last-child {
+    margin: 16px 0 0;
+    color: #555650;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.pups-home-community-actions {
+    min-width: 235px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0;
+}
+
+.pups-home-community .pups-cta-button {
+    color: var(--color-blue-deep);
+    background: var(--color-green);
+    border-color: var(--color-green);
+}
+
+.pups-home-community .pups-cta-button:hover {
+    background: var(--color-white);
+    border-color: var(--pups-border);
+}
+
+.pups-home-community .pups-cta-link {
+    min-height: 36px;
+    color: var(--color-blue-deep);
 }
 
 .pups-eyebrow {
     margin: 0 0 12px;
     color: #81766d;
-    font-family: Consolas, "Courier New", monospace;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -529,7 +780,7 @@ body {
 .pups-donate h2 {
     margin: 0;
     color: var(--color-ink);
-    font-family: Consolas, "Courier New", monospace;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
     font-size: clamp(28px, 4vw, 42px);
     line-height: 1.2;
 }
@@ -539,7 +790,7 @@ body {
     margin: 32px auto 0;
     padding: 28px 32px;
     background: var(--color-white);
-    border: 1px solid #ded5c8;
+    border: 1px solid var(--pups-border);
     border-radius: 10px;
     box-shadow: 0 8px 22px rgba(61, 53, 46, 0.06);
     text-align: left;
@@ -550,14 +801,14 @@ body {
 .pups-program-card h3 {
     margin: 0 0 12px;
     color: #514943;
-    font-family: Consolas, "Courier New", monospace;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
     font-size: 21px;
 }
 
 .pups-goal-card p,
 .pups-section p,
 .pups-program-card p {
-    color: #625b54;
+    color: #555650;
     font-size: 16px;
     line-height: 1.7;
 }
@@ -574,7 +825,7 @@ body {
     gap: 16px;
     max-width: 700px;
     margin: 32px auto 0;
-    color: #69523b;
+    color: var(--color-blue-deep);
 }
 
 .pups-donation-icon {
@@ -614,11 +865,11 @@ body {
 }
 
 .pups-mission {
-    background: var(--color-white);
+    background: var(--pups-warm-beige);
 }
 
 .pups-programs {
-    background: #eee7dc;
+    background: var(--pups-soft-gray-light);
 }
 
 .pups-feature-list {
@@ -632,7 +883,7 @@ body {
     grid-template-columns: 1fr;
     padding: 24px;
     background: var(--color-white);
-    border: 1px solid #ded5c8;
+    border: 1px solid var(--pups-border);
     border-radius: 10px;
     box-shadow: 0 8px 22px rgba(61, 53, 46, 0.06);
 }
@@ -652,13 +903,13 @@ body {
 .pups-program-card {
     padding: 26px;
     background: var(--color-white);
-    border: 1px solid #ded5c8;
+    border: 1px solid var(--pups-border);
     border-radius: 10px;
     box-shadow: 0 8px 22px rgba(61, 53, 46, 0.06);
 }
 
 .pups-volunteer {
-    background: #f3eadc;
+    background: var(--pups-warm-beige);
 }
 
 .pups-section-lead {
@@ -671,7 +922,7 @@ body {
 
 .pups-donate {
     padding: 58px 0;
-    background: #e8d3b3;
+    background: var(--pups-soft-gray-light);
     text-align: center;
 }
 
@@ -693,6 +944,51 @@ body {
     padding: 38px 35px;
     color: var(--color-white);
     background: var(--color-blue-deep);
+}
+
+body.pups-site-page .site-footer {
+    color: var(--color-ink);
+    background: #f1f0ec;
+    border-top: 1px solid var(--pups-border);
+}
+
+body.pups-site-page .footer-logo-link {
+    color: var(--color-blue-deep);
+}
+
+body.pups-site-page .pups-footer-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 auto;
+}
+
+body.pups-site-page .footer-brand-name {
+    display: block;
+    color: var(--color-blue-deep);
+    font-size: 19px;
+}
+
+body.pups-site-page .footer-description {
+    color: #5c5d57;
+    font-size: 14px;
+}
+
+body.pups-site-page .footer-links h2,
+body.pups-site-page .footer-links a {
+    color: var(--color-blue-deep);
+}
+
+body.pups-site-page .footer-links a {
+    width: fit-content;
+    padding: 7px 10px;
+    background: var(--color-green);
+    border-radius: 6px;
+}
+
+body.pups-site-page .footer-links a:hover {
+    background: var(--pups-warm-beige);
+    text-decoration: underline;
 }
 
 .footer-brand {
@@ -832,31 +1128,48 @@ body {
     }
 
     .pups-home-hero {
-        min-height: 620px;
+        min-height: 600px;
+        padding: 135px 0 54px;
     }
 
     .pups-home-hero-content {
-        min-height: 540px;
-        padding-top: 48px;
-        padding-bottom: 42px;
+        min-height: 0;
     }
 
-    .pups-goal-bubble {
-        padding: 22px 20px;
+    .pups-home-hero h1 {
+        font-size: clamp(36px, 10vw, 52px);
     }
 
-    .pups-home-impact {
-        padding: 28px 0;
-    }
-
-    .pups-home-impact .pups-donation-note {
+    .pups-home-actions {
         align-items: flex-start;
-        padding: 18px;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .pups-home-welcome,
+    .pups-home-programs,
+    .pups-home-community {
+        padding: 48px 0;
     }
 
     .pups-intro,
     .pups-section {
         padding: 44px 0;
+    }
+
+    .pups-home-program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pups-home-program-card {
+        min-height: 0;
+    }
+
+    .pups-home-community-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
     }
 
     .pups-goal-card {
@@ -891,6 +1204,11 @@ body {
     .nav-button {
         padding: 9px 7px;
         font-size: 13px;
+    }
+
+    body.pups-site-page .nav-links {
+        justify-content: flex-start;
+        flex-basis: 100%;
     }
 
     .site-footer {
