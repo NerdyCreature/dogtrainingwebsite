@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agility Training | Clockwork Canine</title>
+
+    <title>Donate | Pups for People | Clockwork Canine</title>
+
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="pages.css">
 </head>
-<body class="content-page">
+
+<body>
+
+    <!-- Navigation Header -->
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
 
             <!-- Logo -->
-            <a href="index.html#home" class="logo-link">
+            <a href="/" class="logo-link">
                 <img src="clockworklogo.png" alt="" class="logo">
                 <span class="brand-name" aria-label="Clockwork Canine">
                     <span>Clockwork</span>
@@ -21,7 +25,7 @@
             </a>
 
             <div class="nav-links" id="site-navigation">
-                <a href="index.html#home" class="nav-button">Home</a>
+                <a href="#home" class="nav-button">Home</a>
 
                 <div class="nav-item">
                     <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="who-we-are-menu">
@@ -97,36 +101,20 @@
 
         </nav>
     </header>
-    <main class="page-main">
-        <section class="page-hero">
-            <div class="page-container">
-                <p class="page-eyebrow">Education</p>
-                <h1>Agility Training</h1>
-                <p class="page-lead">A resource template for introducing agility training, course skills, and practice goals.</p>
+
+
+    <!-- Main Page Content -->
+    <main>
+
+        <section class="pups-donate" id="donate">
+            <div class="pups-container">
+                <p class="pups-eyebrow">Make a difference</p>
+                <h2>Become part of the movement, donate today.</h2>
             </div>
         </section>
 
-        <section class="page-section">
-            <div class="page-container">
-                <h2>Build This Resource</h2>
-                <p class="page-section-intro">Use this page as a template. Add Clockwork Canine’s program details, guidance, and resources for this topic.</p>
-                <div class="page-card-grid">
-                    <article class="page-card">
-                        <h3>Overview</h3>
-                        <p>Describe what this training covers, who it is for, and how it fits into your program.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Goals and Practice</h3>
-                        <p>Outline the skills addressed, how progress is practiced, and how plans can suit each dog and handler.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Resources and Next Steps</h3>
-                        <p>Add relevant resources, program requirements, and the best next step for families interested in this topic.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
     </main>
+
     <footer class="site-footer">
         <div class="footer-brand">
             <a href="index.html#home" class="footer-logo-link" aria-label="Clockwork Canine home">
@@ -148,6 +136,7 @@
             <a href="#terms-and-conditions">Terms and Conditions</a>
         </nav>
     </footer>
+
     <script>
         const navigation = document.querySelector(".nav-links");
         const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
@@ -188,5 +177,6 @@
             });
         });
     </script>
+
 </body>
 </html>

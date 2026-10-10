@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agility Training | Clockwork Canine</title>
+
+    <title>The Mission | Pups for People | Clockwork Canine</title>
+
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="pages.css">
 </head>
-<body class="content-page">
+
+<body>
+
+    <!-- Navigation Header -->
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
 
             <!-- Logo -->
-            <a href="index.html#home" class="logo-link">
+            <a href="/" class="logo-link">
                 <img src="clockworklogo.png" alt="" class="logo">
                 <span class="brand-name" aria-label="Clockwork Canine">
                     <span>Clockwork</span>
@@ -21,7 +25,7 @@
             </a>
 
             <div class="nav-links" id="site-navigation">
-                <a href="index.html#home" class="nav-button">Home</a>
+                <a href="#home" class="nav-button">Home</a>
 
                 <div class="nav-item">
                     <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="who-we-are-menu">
@@ -97,36 +101,52 @@
 
         </nav>
     </header>
-    <main class="page-main">
-        <section class="page-hero">
-            <div class="page-container">
-                <p class="page-eyebrow">Education</p>
-                <h1>Agility Training</h1>
-                <p class="page-lead">A resource template for introducing agility training, course skills, and practice goals.</p>
+
+
+    <!-- Main Page Content -->
+    <main>
+
+        <section class="pups-section pups-mission" id="pups-mission">
+            <div class="pups-container pups-copy-container">
+                <h2>The Mission</h2>
+                <p>At Pups for People, we believe having a disability should never mean facing unnecessary barriers to service dog resources, education, or community support.</p>
+                <p>Our mission is to help disabled individuals access essential service dog equipment such as guide harnesses and free training opportunities, educate young people and businesses about service animals and the Americans with Disabilities Act (ADA), and foster a society where service dog teams are understood, respected, and welcomed everywhere.</p>
+                <p>Through community outreach, youth volunteer programs, and donations, we strive to make a meaningful difference for service dog handlers and the communities they call home.</p>
             </div>
         </section>
 
-        <section class="page-section">
-            <div class="page-container">
-                <h2>Build This Resource</h2>
-                <p class="page-section-intro">Use this page as a template. Add Clockwork Canine’s program details, guidance, and resources for this topic.</p>
-                <div class="page-card-grid">
-                    <article class="page-card">
-                        <h3>Overview</h3>
-                        <p>Describe what this training covers, who it is for, and how it fits into your program.</p>
+        <section class="pups-section pups-programs" aria-labelledby="pups-programs-title">
+            <div class="pups-container">
+                <h2 id="pups-programs-title">What We Do</h2>
+                <div class="pups-feature-list">
+                    <article class="pups-feature">
+                        <div class="pups-feature-copy">
+                            <h3>Education &amp; Awareness</h3>
+                            <p>We bring educational spokespeople to schools and youth groups across the United States, teaching students about service animals, disability awareness, appropriate public interactions, and the ADA. Through these assemblies, we can help build a more welcoming world for service dog teams one town at a time.</p>
+                        </div>
                     </article>
-                    <article class="page-card">
-                        <h3>Goals and Practice</h3>
-                        <p>Outline the skills addressed, how progress is practiced, and how plans can suit each dog and handler.</p>
+                    <article class="pups-feature">
+                        <div class="pups-feature-copy">
+                            <h3>Youth for Change</h3>
+                            <p>We empower young volunteers to make a difference through hands-on community projects. Volunteers create dog toys for donation to service dog handlers and animal shelters, turning creativity and compassion into practical support for animals and the people who care for them.</p>
+                        </div>
                     </article>
-                    <article class="page-card">
-                        <h3>Resources and Next Steps</h3>
-                        <p>Add relevant resources, program requirements, and the best next step for families interested in this topic.</p>
+                </div>
+                <div class="pups-program-grid">
+                    <article class="pups-program-card">
+                        <h3>Equipment Assistance</h3>
+                        <p>Quality equipment such as guide harnesses, double hook leashes, and dog boots can be an important part of a service dog's working life. Through donations, we aim to provide eligible handlers with service dog harnesses, leashes, guide and mobility equipment, and other essential supplies at no cost.</p>
+                    </article>
+                    <article class="pups-program-card">
+                        <h3>Training Access Fund</h3>
+                        <p>Financial barriers shouldn't prevent disabled people from pursuing appropriate service dog training. Through donor-funded assistance, we aim to connect eligible individuals with qualified trainers and cover the cost of training classes tailored to their needs.</p>
                     </article>
                 </div>
             </div>
         </section>
+
     </main>
+
     <footer class="site-footer">
         <div class="footer-brand">
             <a href="index.html#home" class="footer-logo-link" aria-label="Clockwork Canine home">
@@ -148,6 +168,7 @@
             <a href="#terms-and-conditions">Terms and Conditions</a>
         </nav>
     </footer>
+
     <script>
         const navigation = document.querySelector(".nav-links");
         const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
@@ -188,5 +209,6 @@
             });
         });
     </script>
+
 </body>
 </html>

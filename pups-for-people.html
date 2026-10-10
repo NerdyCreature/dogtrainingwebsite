@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agility Training | Clockwork Canine</title>
+
+    <title>Pups for People | Clockwork Canine</title>
+
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="pages.css">
 </head>
-<body class="content-page">
+
+<body class="pups-home-page">
+
+    <!-- Navigation Header -->
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
 
             <!-- Logo -->
-            <a href="index.html#home" class="logo-link">
-                <img src="clockworklogo.png" alt="" class="logo">
+            <a href="/" class="logo-link">
                 <span class="brand-name" aria-label="Clockwork Canine">
                     <span>Clockwork</span>
                     <span>Canine</span>
@@ -21,7 +24,7 @@
             </a>
 
             <div class="nav-links" id="site-navigation">
-                <a href="index.html#home" class="nav-button">Home</a>
+                <a href="#home" class="nav-button">Home</a>
 
                 <div class="nav-item">
                     <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="who-we-are-menu">
@@ -97,36 +100,34 @@
 
         </nav>
     </header>
-    <main class="page-main">
-        <section class="page-hero">
-            <div class="page-container">
-                <p class="page-eyebrow">Education</p>
-                <h1>Agility Training</h1>
-                <p class="page-lead">A resource template for introducing agility training, course skills, and practice goals.</p>
+
+
+    <!-- Main Page Content -->
+    <main>
+
+        <section class="pups-home-hero" id="pups-home" aria-labelledby="pups-title">
+            <div class="pups-container pups-home-hero-content">
+                <div class="pups-goal-bubble">
+                    <p class="pups-eyebrow">Our Goal</p>
+                    <p>Help connect disabled people with service dog gear and free training courses across the USA, educate youth and businesses about ADA law, and normalize service animals in public spaces.</p>
+                </div>
+                <h1 id="pups-title">A world where every service dog team belongs.</h1>
             </div>
         </section>
 
-        <section class="page-section">
-            <div class="page-container">
-                <h2>Build This Resource</h2>
-                <p class="page-section-intro">Use this page as a template. Add Clockwork Canine’s program details, guidance, and resources for this topic.</p>
-                <div class="page-card-grid">
-                    <article class="page-card">
-                        <h3>Overview</h3>
-                        <p>Describe what this training covers, who it is for, and how it fits into your program.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Goals and Practice</h3>
-                        <p>Outline the skills addressed, how progress is practiced, and how plans can suit each dog and handler.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Resources and Next Steps</h3>
-                        <p>Add relevant resources, program requirements, and the best next step for families interested in this topic.</p>
-                    </article>
-                </div>
+        <section class="pups-home-impact" aria-label="Donation impact">
+            <div class="pups-container">
+                <aside class="pups-donation-note">
+                    <svg class="pups-donation-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                        <path d="M24 40S5 29 5 16.5C5 9 14.5 5 24 14c9.5-9 19-5 19 2.5C43 29 24 40 24 40Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        <path d="M13 24h7l4-7 5 14 4-7h5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p><strong>100% of your donations</strong> go directly to service dog handlers and disabled individuals in need.</p>
+                </aside>
             </div>
         </section>
     </main>
+
     <footer class="site-footer">
         <div class="footer-brand">
             <a href="index.html#home" class="footer-logo-link" aria-label="Clockwork Canine home">
@@ -148,6 +149,7 @@
             <a href="#terms-and-conditions">Terms and Conditions</a>
         </nav>
     </footer>
+
     <script>
         const navigation = document.querySelector(".nav-links");
         const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
@@ -188,5 +190,6 @@
             });
         });
     </script>
+
 </body>
 </html>
