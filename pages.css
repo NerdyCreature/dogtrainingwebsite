@@ -436,3 +436,184 @@
         transition: none;
     }
 }
+
+.subscription-page .subscription-overview {
+    background: rgba(255, 253, 250, 0.42);
+}
+
+.subscription-page .subscription-overview .page-copy {
+    max-width: 860px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.subscription-page .subscription-benefits {
+    background: transparent;
+}
+
+.subscription-section-heading {
+    max-width: 760px;
+    margin-bottom: 34px;
+}
+
+.subscription-section-heading .page-eyebrow,
+.subscription-community .page-eyebrow {
+    margin-bottom: 12px;
+}
+
+.subscription-section-heading h2,
+.subscription-community h2 {
+    margin: 0;
+    color: var(--color-ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 42px);
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    text-wrap: balance;
+}
+
+.subscription-feature-list {
+    margin: 0;
+    padding: 0;
+    counter-reset: subscription-feature;
+    list-style: none;
+}
+
+.subscription-feature {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.5fr);
+    gap: 36px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(89, 74, 64, 0.18);
+    counter-increment: subscription-feature;
+}
+
+.subscription-feature:last-child {
+    border-bottom: 1px solid rgba(89, 74, 64, 0.18);
+}
+
+.subscription-feature-title::before {
+    display: block;
+    margin-bottom: 10px;
+    color: #746b5b;
+    content: counter(subscription-feature, decimal-leading-zero);
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.subscription-feature-title h3,
+.subscription-membership-option h3 {
+    margin: 0;
+    color: #514943;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    line-height: 1.25;
+}
+
+.subscription-feature-copy {
+    padding-left: 34px;
+    border-left: 1px solid rgba(89, 74, 64, 0.18);
+    color: #625b54;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.subscription-feature-copy p {
+    margin: 0;
+}
+
+.subscription-feature-copy .subscription-tagline {
+    margin-bottom: 8px;
+    color: #514943;
+    font-weight: 700;
+}
+
+.subscription-membership {
+    background: linear-gradient(135deg, rgba(244, 238, 227, 0.92), rgba(233, 220, 199, 0.75));
+}
+
+.subscription-membership-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.subscription-membership-option {
+    padding: 8px 38px 8px 0;
+}
+
+.subscription-membership-option + .subscription-membership-option {
+    padding-right: 0;
+    padding-left: 38px;
+    border-left: 1px solid rgba(89, 74, 64, 0.2);
+}
+
+.subscription-price {
+    margin: 14px 0;
+    color: #514943;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 4vw, 46px);
+    line-height: 1.1;
+}
+
+.subscription-price span {
+    color: #746b5b;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.subscription-membership-option > p:last-child,
+.subscription-community > .page-container > p:last-child {
+    margin: 0;
+    color: #625b54;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.subscription-community {
+    background: transparent;
+    text-align: center;
+}
+
+.subscription-community .page-container {
+    max-width: 790px;
+}
+
+.subscription-community > .page-container > p:last-child {
+    margin-top: 18px;
+}
+
+@media (max-width: 760px) {
+    .subscription-section-heading {
+        margin-bottom: 24px;
+    }
+
+    .subscription-feature {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 24px 0;
+    }
+
+    .subscription-feature-copy {
+        padding: 0;
+        border-left: 0;
+    }
+
+    .subscription-membership-options {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .subscription-membership-option,
+    .subscription-membership-option + .subscription-membership-option {
+        padding: 0;
+        border-left: 0;
+    }
+
+    .subscription-membership-option + .subscription-membership-option {
+        padding-top: 24px;
+        border-top: 1px solid rgba(89, 74, 64, 0.2);
+    }
+}
