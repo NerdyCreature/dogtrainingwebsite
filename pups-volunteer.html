@@ -27,9 +27,16 @@
 
             <div class="nav-links" id="site-navigation">
                 <a href="index.html" class="nav-button">Clockwork Canine</a>
-                <a href="pups-for-people.html" class="nav-button">Home</a>
                 <a href="pups-mission.html" class="nav-button">The Mission</a>
                 <a href="pups-volunteer.html" class="nav-button">Volunteer</a>
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="pups-projects-menu">
+                        Projects <span class="menu-caret" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="pups-projects-menu" hidden>
+                        <li><a href="our-books.html" class="nav-button">Our Books</a></li>
+                    </ul>
+                </div>
                 <a href="pups-donate.html" class="nav-button sign-in-button">Donate</a>
             </div>
 
@@ -87,5 +94,29 @@
     </footer>
 
 
+    <script>
+        const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+        const closeDropdowns = () => {
+            document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+                menu.hidden = true;
+                document.querySelector(`[aria-controls="${menu.id}"]`)?.setAttribute("aria-expanded", "false");
+            });
+        };
+        dropdownToggles.forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+                const menu = document.getElementById(toggle.getAttribute("aria-controls"));
+                const opening = menu.hidden;
+                closeDropdowns();
+                menu.hidden = !opening;
+                toggle.setAttribute("aria-expanded", String(opening));
+            });
+        });
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest(".navbar")) closeDropdowns();
+        });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") closeDropdowns();
+        });
+    </script>
 </body>
 </html>

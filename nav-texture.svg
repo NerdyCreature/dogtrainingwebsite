@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="612" height="388" viewBox="0 0 612 388">
+  <defs>
+    <radialGradient id="amber-glow" cx="68%" cy="30%" r="74%">
+      <stop offset="0" stop-color="#c56a2d" stop-opacity=".52"/>
+      <stop offset=".48" stop-color="#8c4928" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#201614" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="stone-texture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".035 .06" numOctaves="3" seed="11" stitchTiles="stitch" result="grain"/>
+      <feColorMatrix in="grain" type="matrix" values="
+        .52 0 0 0 .10
+        0 .32 0 0 .045
+        0 0 .20 0 .025
+        0 0 0 .28 0"/>
+    </filter>
+  </defs>
+  <rect width="612" height="388" fill="url(#amber-glow)"/>
+  <rect width="612" height="388" fill="#a85c31" filter="url(#stone-texture)"/>
+</svg>

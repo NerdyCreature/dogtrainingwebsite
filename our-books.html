@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Books | Pups for People</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body class="pups-site-page">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="pups-for-people.html" class="logo-link pups-brand-link" aria-label="Pups for People home">
+                <svg class="pups-brand-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <path d="M14 10 7 7l1 13a15 15 0 0 0-2 8c0 9 7 15 18 15s18-6 18-15a15 15 0 0 0-2-8l1-13-7 3a22 22 0 0 0-20 0Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 24h.1M31 24h.1M20 31c2.5 2 5.5 2 8 0" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+                    <path d="M24 40s-6-3.5-6-7.4c0-2.7 3.2-3.9 6-1.2 2.8-2.7 6-1.5 6 1.2 0 3.9-6 7.4-6 7.4Z" fill="currentColor"/>
+                </svg>
+                <span class="brand-name">Pups for People</span>
+            </a>
+            <div class="nav-links" id="site-navigation">
+                <a href="index.html" class="nav-button">Clockwork Canine</a>
+                <a href="pups-mission.html" class="nav-button">The Mission</a>
+                <a href="pups-volunteer.html" class="nav-button">Volunteer</a>
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" type="button" aria-expanded="false" aria-controls="pups-projects-menu">
+                        Projects <span class="menu-caret" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="pups-projects-menu" hidden>
+                        <li><a href="our-books.html" class="nav-button">Our Books</a></li>
+                    </ul>
+                </div>
+                <a href="pups-donate.html" class="nav-button sign-in-button">Donate</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pups-section" aria-labelledby="our-books-title">
+            <div class="pups-container pups-copy-container">
+                <h1 id="our-books-title">Our Books</h1>
+                <p>Books and learning resources from Pups for People.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+        const closeDropdowns = () => {
+            document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+                menu.hidden = true;
+                document.querySelector(`[aria-controls="${menu.id}"]`)?.setAttribute("aria-expanded", "false");
+            });
+        };
+        dropdownToggles.forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+                const menu = document.getElementById(toggle.getAttribute("aria-controls"));
+                const opening = menu.hidden;
+                closeDropdowns();
+                menu.hidden = !opening;
+                toggle.setAttribute("aria-expanded", String(opening));
+            });
+        });
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest(".navbar")) closeDropdowns();
+        });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") closeDropdowns();
+        });
+    </script>
+</body>
+</html>
