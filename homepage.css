@@ -100,6 +100,7 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+    margin-right: 90px;
 }
 
 .nav-button {
@@ -183,10 +184,15 @@ body {
     display: none;
 }
 
-/* Keep the far-right Education menu inside the viewport. */
+.nav-item > .dropdown-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 #education-menu {
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 50%;
 }
 
 .dropdown-menu .nav-button {
