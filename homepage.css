@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap");
+
 /* ========================================
    GENERAL PAGE SETTINGS
    ======================================== */
@@ -118,6 +120,15 @@ body {
     border: none;
     cursor: pointer;
     transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+body:not(.pups-site-page) .nav-links > .nav-button,
+body:not(.pups-site-page) .nav-item > .nav-button {
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
 }
 
 .nav-button:hover {
