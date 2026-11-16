@@ -9,13 +9,13 @@
 }
 
 :root {
-    --color-blue: #84796f;
-    --color-blue-deep: #594a40;
-    --color-green: #81766d;
-    --color-green-hover: #6b6058;
-    --color-beige: #eee7dc;
-    --color-white: #fffdfa;
-    --color-ink: #4b4642;
+    --color-blue: #7d695f;
+    --color-blue-deep: #4d3d34;
+    --color-green: #8b7368;
+    --color-green-hover: #6d564e;
+    --color-beige: #f2e9df;
+    --color-white: #fffdf9;
+    --color-ink: #443b36;
 }
 
 html,
@@ -32,7 +32,7 @@ body {
 }
 
 body {
-    background-color: var(--color-beige);
+    background-color: #f5efe8;
     color: var(--color-ink);
 }
 
@@ -358,7 +358,7 @@ body:not(.pups-site-page) .nav-item > .nav-button {
 
 .home-highlights {
     padding: 64px 35px 72px;
-    background: #e8d3b3;
+    background: #e9d6b5;
 }
 
 .home-highlights-inner {
@@ -390,7 +390,7 @@ body:not(.pups-site-page) .nav-item > .nav-button {
 
 .home-card-label {
     margin: 0 0 10px;
-    color: #81766d;
+    color: #786c62;
     font-family: Consolas, "Courier New", monospace;
     font-size: 13px;
     font-weight: 700;
@@ -407,7 +407,7 @@ body:not(.pups-site-page) .nav-item > .nav-button {
 
 .home-card > p:last-child {
     margin: 0;
-    color: #625b54;
+    color: #5a504b;
     font-size: 16px;
     line-height: 1.7;
 }
@@ -419,13 +419,13 @@ body:not(.pups-site-page) .nav-item > .nav-button {
 }
 
 body.pups-site-page {
-    --color-blue: #a8d5a1;
-    --color-blue-deep: #4a4b45;
-    --color-green: #a8d5a1;
-    --color-green-hover: #66645e;
-    --color-beige: #fbf4e5;
-    --color-white: #fffefa;
-    --color-ink: #3d403b;
+    --color-blue: #ae9a86;
+    --color-blue-deep: #4a403b;
+    --color-green: #b39d8d;
+    --color-green-hover: #6b5d54;
+    --color-beige: #f8f1e6;
+    --color-white: #fffdfb;
+    --color-ink: #3f3935;
     --pups-soft-gray: #f5f4f0;
     --pups-soft-gray-light: #f8f7f3;
     --pups-warm-beige: #f6ebd5;
@@ -821,7 +821,7 @@ body.pups-site-page .pups-goal-card p {
 
 .pups-eyebrow {
     margin: 0 0 12px;
-    color: #81766d;
+    color: #786b62;
     font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
@@ -854,7 +854,7 @@ body.pups-site-page .pups-goal-card p {
 .pups-feature h3,
 .pups-program-card h3 {
     margin: 0 0 12px;
-    color: #514943;
+    color: #4d403a;
     font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
     font-size: 21px;
 }
@@ -1434,7 +1434,7 @@ body:not(.pups-site-page) .home-highlights {
     position: relative;
     padding-top: clamp(58px, 8vw, 92px);
     padding-bottom: clamp(64px, 8vw, 96px);
-    background: linear-gradient(145deg, #eee0ca, #e8d3b3);
+    background: linear-gradient(145deg, #f1e2cf, #e8d3b0);
 }
 
 body:not(.pups-site-page) .home-highlights::before {

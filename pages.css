@@ -5,15 +5,15 @@
 }
 
 .content-page.team-page {
-    background-color: #f0dfc0;
+    background-color: #eadcc3;
 }
 
 .content-page.team-page .page-main {
-    background-color: #f0dfc0;
+    background-color: #eadcc3;
 }
 
 .content-page.team-page .page-hero {
-    background-color: #e9d3a7;
+    background-color: #e4cda1;
 }
 
 .content-page .site-header {
@@ -206,8 +206,8 @@
     overflow: hidden;
     padding: clamp(62px, 8vw, 104px) 0;
     background:
-        radial-gradient(ellipse at 88% 0%, rgba(216, 194, 165, 0.5), transparent 43%),
-        linear-gradient(135deg, #f4eee3, #e9dcc7);
+        radial-gradient(ellipse at 88% 0%, rgba(214, 186, 150, 0.52), transparent 43%),
+        linear-gradient(135deg, #f5efe6, #e9d7bc);
     border-bottom: 1px solid rgba(89, 74, 64, 0.18);
 }
 
@@ -616,6 +616,51 @@
         padding-top: 24px;
         border-top: 1px solid rgba(89, 74, 64, 0.2);
     }
+}
+
+.training-app-page .training-app-section {
+    background: rgba(255, 253, 250, 0.42);
+}
+
+.training-app-page .training-app-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.training-app-page .training-app-button {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    color: var(--color-white);
+    background: var(--color-green-hover);
+    border: 1px solid var(--color-green-hover);
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.training-app-page .training-app-button-secondary {
+    color: var(--color-blue-deep);
+    background: transparent;
+}
+
+.training-app-page .training-app-button:disabled {
+    color: #766f68;
+    background: #e4ddd4;
+    border-color: #d3c9bd;
+    cursor: not-allowed;
+}
+
+.training-app-page .training-app-status {
+    margin: 12px 0 0;
+    color: #625b54;
+    font-size: 14px;
 }
 
 .blog-list {

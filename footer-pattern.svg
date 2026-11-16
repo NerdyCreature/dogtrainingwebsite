@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="320" viewBox="0 0 360 320">
   <g fill="#171717">
-    <g transform="translate(116 104) rotate(-18)">
+    <g transform="translate(110 90) rotate(-18)">
       <ellipse cx="0" cy="10" rx="16" ry="13"/><ellipse cx="-18" cy="-8" rx="6" ry="8"/><ellipse cx="-7" cy="-19" rx="6" ry="8"/><ellipse cx="7" cy="-20" rx="6" ry="8"/><ellipse cx="18" cy="-9" rx="6" ry="8"/>
     </g>
-    <g transform="translate(294 207) rotate(16)">
+    <g transform="translate(250 90) rotate(16)">
       <ellipse cx="0" cy="10" rx="16" ry="13"/><ellipse cx="-18" cy="-8" rx="6" ry="8"/><ellipse cx="-7" cy="-19" rx="6" ry="8"/><ellipse cx="7" cy="-20" rx="6" ry="8"/><ellipse cx="18" cy="-9" rx="6" ry="8"/>
     </g>
-    <g transform="translate(18 286) rotate(14)">
+    <g transform="translate(110 230) rotate(14)">
       <ellipse cx="0" cy="10" rx="16" ry="13"/><ellipse cx="-18" cy="-8" rx="6" ry="8"/><ellipse cx="-7" cy="-19" rx="6" ry="8"/><ellipse cx="7" cy="-20" rx="6" ry="8"/><ellipse cx="18" cy="-9" rx="6" ry="8"/>
     </g>
-    <g transform="translate(344 30) rotate(-10)">
+    <g transform="translate(250 230) rotate(-10)">
       <ellipse cx="0" cy="10" rx="16" ry="13"/><ellipse cx="-18" cy="-8" rx="6" ry="8"/><ellipse cx="-7" cy="-19" rx="6" ry="8"/><ellipse cx="7" cy="-20" rx="6" ry="8"/><ellipse cx="18" cy="-9" rx="6" ry="8"/>
     </g>
   </g>
   <g fill="#171717">
-    <path transform="translate(53 51) rotate(-24)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
-    <path transform="translate(229 62) rotate(28)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
-    <path transform="translate(294 112) rotate(-14)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
-    <path transform="translate(87 204) rotate(20)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
-    <path transform="translate(249 285) rotate(-28)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(50 30) rotate(-24)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(310 30) rotate(28)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(180 160) rotate(-14)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(50 290) rotate(20)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(310 290) rotate(-28)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
   </g>
   <g fill="#f2a23a">
-    <path transform="translate(168 42) rotate(-8)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
-    <path transform="translate(169 164) rotate(18)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
-    <path transform="translate(331 169) rotate(-20)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
-    <path transform="translate(158 288) rotate(10)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(180 30) rotate(-8)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(50 160) rotate(18)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(310 160) rotate(-20)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
+    <path transform="translate(180 290) rotate(10)" d="M-12-5c-2-5-8-7-12-3-5 4-2 10 3 13-5 3-3 9 2 10 5 1 9-3 10-7h18c1 4 5 8 10 7 5-1 7-7 2-10 5-3 8-9 3-13-4-4-10-2-12 3z"/>
   </g>
 </svg>
